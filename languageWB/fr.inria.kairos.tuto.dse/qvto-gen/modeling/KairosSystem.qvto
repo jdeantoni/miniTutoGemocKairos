@@ -141,10 +141,10 @@ main() {
 		getVeryAllElementsFromResourceSetOf(self.oclAsType(EObject), Connector.oclAsType(EClass)).oclAsType(Connector)->map connectorBehavior32connectorBehavior();
 		
 		
-		getVeryAllElementsFromResourceSetOf(self.oclAsType(EObject), Connector.oclAsType(EClass)).oclAsType(Connector)->map connectorBehavior212connectorBehavior2();
+		getVeryAllElementsFromResourceSetOf(self.oclAsType(EObject), Connector.oclAsType(EClass)).oclAsType(Connector)->map connectorBehaviorBounded212connectorBehaviorBounded2();
 		
 		
-		getVeryAllElementsFromResourceSetOf(self.oclAsType(EObject), Connector.oclAsType(EClass)).oclAsType(Connector)->map connectorBehavior312connectorBehavior3();
+		getVeryAllElementsFromResourceSetOf(self.oclAsType(EObject), Connector.oclAsType(EClass)).oclAsType(Connector)->map connectorBehaviorBounded312connectorBehaviorBounded3();
 		
 		
 
@@ -332,7 +332,7 @@ main() {
 					_abstract := seqOfRelationDeclaration[name = 'Coincides']->first().oclAsType(TimeModel::CCSLModel::ClockExpressionAndRelation::KernelRelation::KernelRelationDeclaration).leftEntity;
 				};
 				bindings += object TimeModel::CCSLModel::ClockExpressionAndRelation::Binding{
-					bindable := theMainBlock.elements[name = getNameOrUID(self.inputport.oclAsType(ecore::EObject).eContainer().oclAsType(Actor).oclAsType(EObject))+'_readIt']->first();
+					bindable := theMainBlock.elements[name = getNameOrUID(self.oclAsType(EObject))+'_transferIt']->first();
 					_abstract := seqOfRelationDeclaration[name = 'Coincides']->first().oclAsType(TimeModel::CCSLModel::ClockExpressionAndRelation::KernelRelation::KernelRelationDeclaration).rightEntity;
 				};
 		
@@ -340,9 +340,9 @@ main() {
 		}
 		
 	
-		mapping inMM1::Connector::connectorBehavior212connectorBehavior2(): TimeModel::CCSLModel::ClockExpressionAndRelation::Relation
+		mapping inMM1::Connector::connectorBehaviorBounded212connectorBehaviorBounded2(): TimeModel::CCSLModel::ClockExpressionAndRelation::Relation
 		{
-		 	name := getNameOrUID(self.oclAsType(EObject))+"Alternates_connectorBehavior2";
+		 	name := getNameOrUID(self.oclAsType(EObject))+"Alternates_connectorBehaviorBounded2";
 			type := seqOfRelationDeclaration->select(rd | rd.name = "Alternates")->first();
 				bindings += object TimeModel::CCSLModel::ClockExpressionAndRelation::Binding{
 					bindable := theMainBlock.elements[name = getNameOrUID(self.outputport.oclAsType(ecore::EObject).eContainer().oclAsType(Actor).oclAsType(EObject))+'_writeIt']->first();
@@ -357,9 +357,9 @@ main() {
 		}
 		
 	
-		mapping inMM1::Connector::connectorBehavior312connectorBehavior3(): TimeModel::CCSLModel::ClockExpressionAndRelation::Relation
+		mapping inMM1::Connector::connectorBehaviorBounded312connectorBehaviorBounded3(): TimeModel::CCSLModel::ClockExpressionAndRelation::Relation
 		{
-		 	name := getNameOrUID(self.oclAsType(EObject))+"Alternates_connectorBehavior3";
+		 	name := getNameOrUID(self.oclAsType(EObject))+"Alternates_connectorBehaviorBounded3";
 			type := seqOfRelationDeclaration->select(rd | rd.name = "Alternates")->first();
 				bindings += object TimeModel::CCSLModel::ClockExpressionAndRelation::Binding{
 					bindable := theMainBlock.elements[name = getNameOrUID(self.oclAsType(EObject))+'_transferIt']->first();

@@ -34,12 +34,18 @@ context Connector
 				self.oclAsType(ecore::EObject).eContainer().oclAsType(KairosSystem).time,
 				delay
 				) in
-		Relation Coincides(writeDelayed, self.inputport.oclAsType(ecore::EObject).eContainer().oclAsType(Actor).readIt)
+		Relation Coincides(writeDelayed, self.transferIt)
  		
- 	inv connectorBehavior2:
+ 	--the two following constraints bounded the state space, not the two commented one below
+ 	inv connectorBehaviorBounded2:
 		Relation Alternates(self.outputport.oclAsType(ecore::EObject).eContainer().oclAsType(Actor).writeIt, self.transferIt)
-	inv connectorBehavior3:
+	inv connectorBehaviorBounded3:
 		Relation Alternates(self.transferIt, self.inputport.oclAsType(ecore::EObject).eContainer().oclAsType(Actor).readIt)
+--	inv connectorBehaviorUnbounded2:
+--		Relation Precedes(self.outputport.oclAsType(ecore::EObject).eContainer().oclAsType(Actor).writeIt, self.transferIt)
+--	inv connectorBehaviorUnbounded3:
+--		Relation Precedes(self.transferIt, self.inputport.oclAsType(ecore::EObject).eContainer().oclAsType(Actor).readIt)
+
 
 context Actor
 	inv TaskBehavior:
