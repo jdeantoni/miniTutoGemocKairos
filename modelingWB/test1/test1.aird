@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:kairosTuto="http://team.inria.fr/kairos/kairosTuto" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis xmi:id="_9Pkg4O86EemWEOfBt85qRg" selectedViews="_9-eOQO86EemWEOfBt85qRg" version="13.0.0.201804031646">
+    <semanticResources>test1.ks</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" xmi:id="_9-eOQO86EemWEOfBt85qRg">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/fr.inria.kairos.tuto.concretesyntax.design/description/kairosSystem.odesign#//@ownedViewpoints[name='KairosSystemViewPoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_-CJNUO86EemWEOfBt85qRg" name="KairosSystem" repPath="#_9-omUO86EemWEOfBt85qRg">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/fr.inria.kairos.tuto.concretesyntax.design/description/kairosSystem.odesign#//@ownedViewpoints[name='KairosSystemViewPoint']/@ownedRepresentations[name='KairosSystem']"/>
+        <target xmi:type="kairosTuto:KairosSystem" href="test1.ks#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram xmi:id="_-CGKAO86EemWEOfBt85qRg" name="KairosSystem" uid="_9-omUO86EemWEOfBt85qRg">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_-CGKAe86EemWEOfBt85qRg" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_-CGKAu86EemWEOfBt85qRg"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_-CX20O86EemWEOfBt85qRg" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_-CX20e86EemWEOfBt85qRg" type="Sirius" element="_-CGKAO86EemWEOfBt85qRg" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_-Ci18O86EemWEOfBt85qRg" type="2001" element="_-CGKBO86EemWEOfBt85qRg">
+          <children xmi:type="notation:Node" xmi:id="_-CqKsO86EemWEOfBt85qRg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_-CqKse86EemWEOfBt85qRg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_-Cw4YO86EemWEOfBt85qRg" type="3001" element="_-CGKBe86EemWEOfBt85qRg">
+            <children xmi:type="notation:Node" xmi:id="_-Cw4Y-86EemWEOfBt85qRg" type="5001">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_-Cw4ZO86EemWEOfBt85qRg" x="-14"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_-C40MO86EemWEOfBt85qRg" type="3003" element="_-CGxEO86EemWEOfBt85qRg">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_-C40Me86EemWEOfBt85qRg" fontName="Noto Sans"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-C40Mu86EemWEOfBt85qRg"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_-Cw4Ye86EemWEOfBt85qRg" fontColor="1533850" fontName="Noto Sans" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-Cw4Yu86EemWEOfBt85qRg" x="77" y="24" width="10" height="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_-C4NIO86EemWEOfBt85qRg" type="3003" element="_-CGxEe86EemWEOfBt85qRg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_-C4NIe86EemWEOfBt85qRg" fontName="Noto Sans"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-C4NIu86EemWEOfBt85qRg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_-Ci18e86EemWEOfBt85qRg" fontColor="1533850" fontName="Noto Sans" fontHeight="8" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-Ci18u86EemWEOfBt85qRg" y="120" width="85" height="60"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_-CvqQO86EemWEOfBt85qRg" type="2001" element="_-CGxEu86EemWEOfBt85qRg">
+          <children xmi:type="notation:Node" xmi:id="_-CwRUO86EemWEOfBt85qRg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_-CwRUe86EemWEOfBt85qRg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_-C40M-86EemWEOfBt85qRg" type="3001" element="_-CGxE-86EemWEOfBt85qRg">
+            <children xmi:type="notation:Node" xmi:id="_-C5bQO86EemWEOfBt85qRg" type="5001">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_-C5bQe86EemWEOfBt85qRg" x="11"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_-C6CU-86EemWEOfBt85qRg" type="3003" element="_-CGxFO86EemWEOfBt85qRg">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_-C6CVO86EemWEOfBt85qRg" fontName="Noto Sans"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-C6CVe86EemWEOfBt85qRg"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_-C40NO86EemWEOfBt85qRg" fontColor="1533850" fontName="Noto Sans" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-C40Ne86EemWEOfBt85qRg" x="-2" y="24" width="10" height="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_-C6CUO86EemWEOfBt85qRg" type="3003" element="_-CGxFe86EemWEOfBt85qRg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_-C6CUe86EemWEOfBt85qRg" fontName="Noto Sans"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-C6CUu86EemWEOfBt85qRg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_-CvqQe86EemWEOfBt85qRg" fontColor="1533850" fontName="Noto Sans" fontHeight="8" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-CvqQu86EemWEOfBt85qRg" x="228" y="120" width="84" height="60"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_-CX20u86EemWEOfBt85qRg"/>
+        <edges xmi:type="notation:Edge" xmi:id="_-DFogO86EemWEOfBt85qRg" type="4001" element="_-CGxFu86EemWEOfBt85qRg" source="_-Cw4YO86EemWEOfBt85qRg" target="_-C40M-86EemWEOfBt85qRg">
+          <children xmi:type="notation:Node" xmi:id="_-DG2oO86EemWEOfBt85qRg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-DG2oe86EemWEOfBt85qRg" x="-4"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_-DG2ou86EemWEOfBt85qRg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-DG2o-86EemWEOfBt85qRg" x="4" y="-4"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_-DHdsO86EemWEOfBt85qRg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-DHdse86EemWEOfBt85qRg" x="11" y="-1"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_-DFoge86EemWEOfBt85qRg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_-DFogu86EemWEOfBt85qRg" fontName="Noto Sans" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-DFog-86EemWEOfBt85qRg" points="[5, 0, -162, 0]$[162, 0, -5, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-DOLYO86EemWEOfBt85qRg" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-DOLYe86EemWEOfBt85qRg" id="(0.5,0.5)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_-CGKBO86EemWEOfBt85qRg" name="a1" width="6" height="6" resizeKind="NSEW">
+      <target xmi:type="kairosTuto:Actor" href="test1.ks#//@ownedActors.0"/>
+      <semanticElements xmi:type="kairosTuto:Actor" href="test1.ks#//@ownedActors.0"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_-CGKBe86EemWEOfBt85qRg" name="p1" outgoingEdges="_-CGxFu86EemWEOfBt85qRg" width="1" height="1" resizeKind="NSEW">
+        <target xmi:type="kairosTuto:OutputPort" href="test1.ks#//@ownedActors.0/@ownedOutputPorts.0"/>
+        <semanticElements xmi:type="kairosTuto:OutputPort" href="test1.ks#//@ownedActors.0/@ownedOutputPorts.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_-CGxEO86EemWEOfBt85qRg" showIcon="false" labelColor="154,103,23" borderSize="1" borderSizeComputationExpression="1" borderColor="239,41,41" color="255,255,255">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/fr.inria.kairos.tuto.concretesyntax.design/description/kairosSystem.odesign#//@ownedViewpoints[name='KairosSystemViewPoint']/@ownedRepresentations[name='KairosSystem']/@defaultLayer/@nodeMappings[name='Actor']/@borderedNodeMappings[name='outputport']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/fr.inria.kairos.tuto.concretesyntax.design/description/kairosSystem.odesign#//@ownedViewpoints[name='KairosSystemViewPoint']/@ownedRepresentations[name='KairosSystem']/@defaultLayer/@nodeMappings[name='Actor']/@borderedNodeMappings[name='outputport']"/>
+      </ownedBorderedNodes>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_-CGxEe86EemWEOfBt85qRg" showIcon="false" labelColor="154,103,23" borderSize="2" borderSizeComputationExpression="2" borderColor="39,76,114" labelPosition="node" color="255,255,255">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/fr.inria.kairos.tuto.concretesyntax.design/description/kairosSystem.odesign#//@ownedViewpoints[name='KairosSystemViewPoint']/@ownedRepresentations[name='KairosSystem']/@defaultLayer/@nodeMappings[name='Actor']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/fr.inria.kairos.tuto.concretesyntax.design/description/kairosSystem.odesign#//@ownedViewpoints[name='KairosSystemViewPoint']/@ownedRepresentations[name='KairosSystem']/@defaultLayer/@nodeMappings[name='Actor']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_-CGxEu86EemWEOfBt85qRg" name="a2" width="6" height="6" resizeKind="NSEW">
+      <target xmi:type="kairosTuto:Actor" href="test1.ks#//@ownedActors.1"/>
+      <semanticElements xmi:type="kairosTuto:Actor" href="test1.ks#//@ownedActors.1"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" xmi:id="_-CGxE-86EemWEOfBt85qRg" name="p2" incomingEdges="_-CGxFu86EemWEOfBt85qRg" width="1" height="1" resizeKind="NSEW">
+        <target xmi:type="kairosTuto:InputPort" href="test1.ks#//@ownedActors.1/@ownedInputPorts.0"/>
+        <semanticElements xmi:type="kairosTuto:InputPort" href="test1.ks#//@ownedActors.1/@ownedInputPorts.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_-CGxFO86EemWEOfBt85qRg" showIcon="false" labelColor="154,103,23" borderSize="1" borderSizeComputationExpression="1" borderColor="138,226,52" color="255,255,255">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/fr.inria.kairos.tuto.concretesyntax.design/description/kairosSystem.odesign#//@ownedViewpoints[name='KairosSystemViewPoint']/@ownedRepresentations[name='KairosSystem']/@defaultLayer/@nodeMappings[name='Actor']/@borderedNodeMappings[name='inputport']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/fr.inria.kairos.tuto.concretesyntax.design/description/kairosSystem.odesign#//@ownedViewpoints[name='KairosSystemViewPoint']/@ownedRepresentations[name='KairosSystem']/@defaultLayer/@nodeMappings[name='Actor']/@borderedNodeMappings[name='inputport']"/>
+      </ownedBorderedNodes>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_-CGxFe86EemWEOfBt85qRg" showIcon="false" labelColor="154,103,23" borderSize="2" borderSizeComputationExpression="2" borderColor="39,76,114" labelPosition="node" color="255,255,255">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:SquareDescription" href="platform:/plugin/fr.inria.kairos.tuto.concretesyntax.design/description/kairosSystem.odesign#//@ownedViewpoints[name='KairosSystemViewPoint']/@ownedRepresentations[name='KairosSystem']/@defaultLayer/@nodeMappings[name='Actor']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/fr.inria.kairos.tuto.concretesyntax.design/description/kairosSystem.odesign#//@ownedViewpoints[name='KairosSystemViewPoint']/@ownedRepresentations[name='KairosSystem']/@defaultLayer/@nodeMappings[name='Actor']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_-CGxFu86EemWEOfBt85qRg" sourceNode="_-CGKBe86EemWEOfBt85qRg" targetNode="_-CGxE-86EemWEOfBt85qRg">
+      <target xmi:type="kairosTuto:Connector" href="test1.ks#//@ownedConnectors.0"/>
+      <semanticElements xmi:type="kairosTuto:Connector" href="test1.ks#//@ownedConnectors.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_-CGxF-86EemWEOfBt85qRg" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/fr.inria.kairos.tuto.concretesyntax.design/description/kairosSystem.odesign#//@ownedViewpoints[name='KairosSystemViewPoint']/@ownedRepresentations[name='KairosSystem']/@defaultLayer/@edgeMappings[name='connector']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_-CGxGO86EemWEOfBt85qRg"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/fr.inria.kairos.tuto.concretesyntax.design/description/kairosSystem.odesign#//@ownedViewpoints[name='KairosSystemViewPoint']/@ownedRepresentations[name='KairosSystem']/@defaultLayer/@edgeMappings[name='connector']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/fr.inria.kairos.tuto.concretesyntax.design/description/kairosSystem.odesign#//@ownedViewpoints[name='KairosSystemViewPoint']/@ownedRepresentations[name='KairosSystem']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_-CGxGe86EemWEOfBt85qRg"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/fr.inria.kairos.tuto.concretesyntax.design/description/kairosSystem.odesign#//@ownedViewpoints[name='KairosSystemViewPoint']/@ownedRepresentations[name='KairosSystem']/@defaultLayer"/>
+    <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/fr.inria.kairos.tuto.concretesyntax.design/description/kairosSystem.odesign#//@ownedViewpoints[name='KairosSystemViewPoint']/@ownedRepresentations[name='KairosSystem']/@additionalLayers[name='Debug']"/>
+    <target xmi:type="kairosTuto:KairosSystem" href="test1.ks#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

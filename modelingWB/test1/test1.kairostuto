@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<kairosTuto:KairosSystem xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:kairosTuto="http://team.inria.fr/kairos/kairosTuto" name="test1">
-  <ownedActors name="a1">
-    <ownedInputPorts name="ip1"/>
-  </ownedActors>
-</kairosTuto:KairosSystem>
