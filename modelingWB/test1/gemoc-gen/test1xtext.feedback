@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ASCII"?>
+<feedback:ActionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:feedback="http://timesquare.inria.fr/feedback">
+  <events name="MSE_zaza_0_time">
+    <caller href="../test1xtext.ks#/"/>
+    <action href="http://team.inria.fr/kairos/kairosTuto#//KairosSystem/incTime"/>
+    <solverEvent href="test1xtext.timemodel#//@subBlock.0/@elements.0"/>
+  </events>
+  <events name="MSE_a1_1_startIt">
+    <caller href="../test1xtext.ks#//@ownedActors.0"/>
+    <action href="http://team.inria.fr/kairos/kairosTuto#//Actor/start"/>
+    <solverEvent href="test1xtext.timemodel#//@subBlock.0/@elements.1"/>
+  </events>
+  <events name="MSE_a2_2_startIt">
+    <caller href="../test1xtext.ks#//@ownedActors.1"/>
+    <action href="http://team.inria.fr/kairos/kairosTuto#//Actor/start"/>
+    <solverEvent href="test1xtext.timemodel#//@subBlock.0/@elements.2"/>
+  </events>
+  <events name="MSE_a1_1_stopIt">
+    <caller href="../test1xtext.ks#//@ownedActors.0"/>
+    <action href="http://team.inria.fr/kairos/kairosTuto#//Actor/stop"/>
+    <solverEvent href="test1xtext.timemodel#//@subBlock.0/@elements.3"/>
+  </events>
+  <events name="MSE_a2_2_stopIt">
+    <caller href="../test1xtext.ks#//@ownedActors.1"/>
+    <action href="http://team.inria.fr/kairos/kairosTuto#//Actor/stop"/>
+    <solverEvent href="test1xtext.timemodel#//@subBlock.0/@elements.4"/>
+  </events>
+  <events name="MSE_a1_1_transformIt">
+    <caller href="../test1xtext.ks#//@ownedActors.0"/>
+    <action href="http://team.inria.fr/kairos/kairosTuto#//Actor/transform"/>
+    <solverEvent href="test1xtext.timemodel#//@subBlock.0/@elements.5"/>
+  </events>
+  <events name="MSE_a2_2_transformIt">
+    <caller href="../test1xtext.ks#//@ownedActors.1"/>
+    <action href="http://team.inria.fr/kairos/kairosTuto#//Actor/transform"/>
+    <solverEvent href="test1xtext.timemodel#//@subBlock.0/@elements.6"/>
+  </events>
+  <events name="MSE_a1_1_readIt">
+    <caller href="../test1xtext.ks#//@ownedActors.0"/>
+    <action href="http://team.inria.fr/kairos/kairosTuto#//Actor/read"/>
+    <solverEvent href="test1xtext.timemodel#//@subBlock.0/@elements.7"/>
+  </events>
+  <events name="MSE_a2_2_readIt">
+    <caller href="../test1xtext.ks#//@ownedActors.1"/>
+    <action href="http://team.inria.fr/kairos/kairosTuto#//Actor/read"/>
+    <solverEvent href="test1xtext.timemodel#//@subBlock.0/@elements.8"/>
+  </events>
+  <events name="MSE_a1_1_writeIt">
+    <caller href="../test1xtext.ks#//@ownedActors.0"/>
+    <action href="http://team.inria.fr/kairos/kairosTuto#//Actor/write"/>
+    <solverEvent href="test1xtext.timemodel#//@subBlock.0/@elements.9"/>
+  </events>
+  <events name="MSE_a2_2_writeIt">
+    <caller href="../test1xtext.ks#//@ownedActors.1"/>
+    <action href="http://team.inria.fr/kairos/kairosTuto#//Actor/write"/>
+    <solverEvent href="test1xtext.timemodel#//@subBlock.0/@elements.10"/>
+  </events>
+  <events name="MSE_c1_3_transferIt">
+    <caller href="../test1xtext.ks#//@ownedConnectors.0"/>
+    <action href="http://team.inria.fr/kairos/kairosTuto#//Connector/transfer"/>
+    <solverEvent href="test1xtext.timemodel#//@subBlock.0/@elements.11"/>
+  </events>
+  <importStatements importURI="platform:/1"/>
+</feedback:ActionModel>

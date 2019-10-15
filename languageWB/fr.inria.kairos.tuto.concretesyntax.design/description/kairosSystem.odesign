@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/description/tool/1.1.0" name="kairosSystem" version="12.0.0.2017041100">
+  <ownedViewpoints name="MyViewpoint" modelFileExtension="*.ks">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="KairosSystem" initialisation="true" showOnStartup="true" domainClass="kairosTuto::KairosSystem">
+      <metamodel href="../../fr.inria.kairos.tuto.model/model/kairosTuto.ecore#/"/>
+      <defaultLayer name="Default">
+        <nodeMappings name="Actor" domainClass="kairosTuto::Actor">
+          <borderedNodeMappings name="inputport" semanticCandidatesExpression="feature:eAllContents" domainClass="kairosTuto::InputPort">
+            <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" showIcon="false" sizeComputationExpression="1" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_chocolate']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            </style>
+          </borderedNodeMappings>
+          <borderedNodeMappings name="outputport" semanticCandidatesExpression="feature:eAllContents" domainClass="kairosTuto::OutputPort">
+            <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" showIcon="false" sizeComputationExpression="1" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_chocolate']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            </style>
+          </borderedNodeMappings>
+          <style xsi:type="style:SquareDescription" borderSizeComputationExpression="2" showIcon="false" sizeComputationExpression="6" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_chocolate']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="connector" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='KairosSystem']/@defaultLayer/@nodeMappings[name='Actor']/@borderedNodeMappings[name='outputport']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='KairosSystem']/@defaultLayer/@nodeMappings[name='Actor']/@borderedNodeMappings[name='inputport']" targetFinderExpression="[self.inputport/]" sourceFinderExpression="[self.outputport/]" domainClass="kairosTuto::Connector" useDomainElement="true">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+      </defaultLayer>
+      <additionalLayers name="Debug" activeByDefault="true">
+        <toolSections name="Debug">
+          <ownedTools xsi:type="tool:PopupMenu" name="Gemoc">
+            <menuItemDescription xsi:type="tool:OperationAction" name="Debug" icon="/org.eclipse.gemoc.executionframework.extensions.sirius/icons/debug_exc.gif">
+              <view name="views"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool:ExternalJavaAction" name="Debug" icon="/org.eclipse.gemoc.executionframework.extensions.sirius/icons/debug_exc.gif" id="org.eclipse.gemoc.execution.sequential.javaengine.ui.debug.sirius.action.gemocDebugAs"/>
+              </initialOperation>
+            </menuItemDescription>
+            <menuItemDescription xsi:type="tool:OperationAction" name="Toggle breakpoint" icon="/org.eclipse.gemoc.executionframework.extensions.sirius/icons/debug_exc.gif">
+              <view name="views"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool:ExternalJavaAction" name="Toggle Gemoc breakpoint" icon="/org.eclipse.gemoc.executionframework.extensions.sirius/icons/breakpoint.gif" id="org.eclipse.gemoc.execution.sequential.javaengine.ui.debug.sirius.action.GemocSequentialToggleBreakpointAction"/>
+              </initialOperation>
+            </menuItemDescription>
+            <menuItemDescription xsi:type="tool:OperationAction" name="Toggle conditional breakpoint" icon="/org.eclipse.gemoc.executionframework.extensions.sirius/icons/debug_exc.gif">
+              <view name="views"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool:ExternalJavaAction" name="Toggle Gemoc conditional breakpoint" icon="/org.eclipse.gemoc.executionframework.extensions.sirius/icons/breakpoint.gif" id="org.eclipse.gemoc.execution.sequential.javaengine.ui.debug.sirius.action.GemocSequentialToggleConditionalBreakpointAction"/>
+              </initialOperation>
+            </menuItemDescription>
+          </ownedTools>
+        </toolSections>
+        <decorationDescriptionsSet>
+          <decorationDescriptions xsi:type="description_1:MappingBasedDecoration" name="Enabled breakpoint" position="WEST" preconditionExpression="service:self.hasEnabledBreakpoint" imageExpression="/org.eclipse.gemoc.executionframework.extensions.sirius/icons/breakpoint_enabled.gif" mappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='KairosSystem']/@defaultLayer/@nodeMappings[name='Actor'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='KairosSystem']/@defaultLayer/@nodeMappings[name='Actor']/@borderedNodeMappings[name='inputport'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='KairosSystem']/@defaultLayer/@nodeMappings[name='Actor']/@borderedNodeMappings[name='outputport'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='KairosSystem']/@defaultLayer/@edgeMappings[name='connector']"/>
+          <decorationDescriptions xsi:type="description_1:MappingBasedDecoration" name="Disabled breakpoint" position="WEST" preconditionExpression="service:self.hasDisabledBreakpoint" imageExpression="/org.eclipse.gemoc.executionframework.extensions.sirius/icons/breakpoint_disabled.gif" mappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='KairosSystem']/@defaultLayer/@nodeMappings[name='Actor'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='KairosSystem']/@defaultLayer/@nodeMappings[name='Actor']/@borderedNodeMappings[name='inputport'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='KairosSystem']/@defaultLayer/@nodeMappings[name='Actor']/@borderedNodeMappings[name='outputport'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='KairosSystem']/@defaultLayer/@edgeMappings[name='connector']"/>
+        </decorationDescriptionsSet>
+        <customization>
+          <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="service:self.isCurrentInstruction">
+            <featureCustomizations xsi:type="description:EReferenceCustomization" applyOnAll="true" referenceName="borderColor" value="//@userColorsPalettes[name='KairosSystem%20Palette']/@entries[name='current%20instruction']"/>
+            <featureCustomizations xsi:type="description:EReferenceCustomization" applyOnAll="true" referenceName="strokeColor" value="//@userColorsPalettes[name='KairosSystem%20Palette']/@entries[name='current%20instruction']"/>
+            <featureCustomizations xsi:type="description:EReferenceCustomization" applyOnAll="true" referenceName="labelColor" value="//@userColorsPalettes[name='KairosSystem%20Palette']/@entries[name='current%20instruction']"/>
+          </vsmElementCustomizations>
+        </customization>
+      </additionalLayers>
+      <additionalLayers name="Animation">
+        <nodeMappings name="System" semanticCandidatesExpression="[self.ownedActors->first()/]" domainClass="Actor">
+          <style xsi:type="style:NoteDescription" showIcon="false" labelExpression="[self.eContainer(KairosSystem).getTime()/]" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='orange']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
+          </style>
+        </nodeMappings>
+        <customization>
+          <vsmElementCustomizations xsi:type="description:VSMElementCustomization">
+            <featureCustomizations xsi:type="description:EAttributeCustomization" appliedOn="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='KairosSystem']/@defaultLayer/@nodeMappings[name='Actor']/@borderedNodeMappings[name='inputport']/@style //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='KairosSystem']/@defaultLayer/@nodeMappings[name='Actor']/@borderedNodeMappings[name='outputport']/@style" attributeName="labelExpression" value="[self.getValues()/]"/>
+          </vsmElementCustomizations>
+          <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="[self.getState() = 1/]">
+            <featureCustomizations xsi:type="description:EReferenceCustomization" appliedOn="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='KairosSystem']/@defaultLayer/@nodeMappings[name='Actor']/@style" referenceName="color">
+              <value href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+            </featureCustomizations>
+          </vsmElementCustomizations>
+          <vsmElementCustomizations xsi:type="description:VSMElementCustomization" predicateExpression="[self.getState() = 2/]">
+            <featureCustomizations xsi:type="description:EReferenceCustomization" appliedOn="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='KairosSystem']/@defaultLayer/@nodeMappings[name='Actor']/@style" referenceName="color">
+              <value href="environment:/viewpoint#//@systemColors/@entries[name='light_red']"/>
+            </featureCustomizations>
+          </vsmElementCustomizations>
+        </customization>
+      </additionalLayers>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="fr.inria.kairos.tuto.concretesyntax.design.Services"/>
+    <ownedJavaExtensions qualifiedClassName="fr.inria.kairos.tuto.concretesyntax.design.services.KairossystemDebugServices"/>
+    <ownedJavaExtensions qualifiedClassName="fr.inria.kairos.tuto.concretesyntax.design.services.KairossystemAnimationServices"/>
+  </ownedViewpoints>
+  <userColorsPalettes name="Mallet">
+    <entries xsi:type="description:UserFixedColor" red="253" green="161" blue="208" name="pink"/>
+  </userColorsPalettes>
+  <userColorsPalettes name="KairosSystem Palette">
+    <entries xsi:type="description:UserFixedColor" red="255" green="255" blue="0" name="current instruction"/>
+  </userColorsPalettes>
+</description:Group>

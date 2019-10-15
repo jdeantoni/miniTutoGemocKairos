@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+  <extension point="org.eclipse.gemoc.gemoc_language_workbench.sequential.xdsml">
+    <XDSML_Definition name="fr.inria.kairos.tuto.dsl.KairosSystem" xdsmlFilePath="platform:/plugin/fr.inria.kairos.tuto.dsl/KairosSystem.dsl" modelLoader_class="org.eclipse.gemoc.executionframework.extensions.sirius.modelloader.DefaultModelLoader" />
+  </extension>
+  <extension point="org.eclipse.gemoc.gemoc_language_workbench.concurrent.xdsml">
+    <XDSML_Definition name="fr.inria.kairos.tuto.dsl.KairosSystem" xdsmlFilePath="/fr.inria.kairos.tuto.dsl/KairosSystem.dsl" codeExecutor_class="kairossystem.xdsml.api.impl.KairosSystemCodeExecutor" modelLoader_class="org.eclipse.gemoc.executionframework.extensions.sirius.modelloader.DefaultModelLoader" solver_class="org.eclipse.gemoc.execution.concurrent.ccsljavaengine.extensions.timesquare.moc.impl.CcslSolver" toCCSLQVTOFilePath="/fr.inria.kairos.tuto.dse/qvto-gen/modeling/KairosSystem.qvto" />
+  </extension>
+</plugin>

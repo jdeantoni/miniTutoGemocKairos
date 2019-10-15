@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated kairosTuto -->
+      <package
+            uri="http://team.inria.fr/kairos/kairosTuto"
+            class="fr.inria.kairos.tuto.model.kairosTuto.KairosTutoPackage"
+            genModel="model/kairosTuto.genmodel"/>
+   </extension>
+
+</plugin>

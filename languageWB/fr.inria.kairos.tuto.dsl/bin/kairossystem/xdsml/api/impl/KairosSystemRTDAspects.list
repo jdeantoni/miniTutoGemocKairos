@@ -1,0 +1,4 @@
+fr.inria.kairos.tuto.k3dsa.InputPortAspect
+fr.inria.kairos.tuto.k3dsa.ActorAspect
+fr.inria.kairos.tuto.k3dsa.OutputPortAspect
+fr.inria.kairos.tuto.k3dsa.KairosSystemAspect

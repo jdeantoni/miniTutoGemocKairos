@@ -1,0 +1,33 @@
+AutomataConstraintLibrary KairosSystemLib{ 
+import "platform:/plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib"as kernel;
+
+RelationLibrary KairosRelLib{
+
+		AutomataRelationDefinition KairosTaskDefinition [ KairosTask ] {
+
+			init:  KTD_S1
+
+			from KTD_S1 to KTD_S2 : KTD_S1ToKTD_S2
+			-> ( )
+
+			from KTD_S2 to KTD_S3 : KTD_S2ToKTD_S3
+			-> ( when readIn, startTask )
+
+			from KTD_S3 to KTD_S4 : KTD_S3ToKTD_S4
+			-> ( when transform )
+
+			from KTD_S4 to KTD_S2 : KTD_S4ToKTD_S2
+			-> ( when stopTask, writeOut )
+
+			State KTD_S1 ( out : KTD_S1ToKTD_S2 )
+
+			State KTD_S2 ( in : KTD_S1ToKTD_S2, KTD_S4ToKTD_S2 out : KTD_S2ToKTD_S3 )
+
+			State KTD_S3 ( in : KTD_S2ToKTD_S3 out : KTD_S3ToKTD_S4 )
+
+			State KTD_S4 ( in : KTD_S3ToKTD_S4 out : KTD_S4ToKTD_S2 )
+		}
+		RelationDeclaration KairosTask (startTask:clock, stopTask:clock, readIn:clock, writeOut:clock,transform:clock)	
+	}
+
+}

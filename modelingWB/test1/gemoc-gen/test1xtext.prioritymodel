@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fr.inria.aoste.timesquare.ccslkernel.solver.priorities:PrioritySpecification xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:fr.inria.aoste.timesquare.ccslkernel.solver.priorities="http://fr.inria.aoste.timesquare.ccslkernel.solver.priorities">
+  <importedModel importURI="platform:/1"/>
+</fr.inria.aoste.timesquare.ccslkernel.solver.priorities:PrioritySpecification>

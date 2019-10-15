@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="kairosTuto" nsURI="http://team.inria.fr/kairos/kairosTuto" nsPrefix="kairosTuto">
+  <eClassifiers xsi:type="ecore:EClass" name="KairosSystem" eSuperTypes="#//NamedElement">
+    <eOperations name="incTime"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ownedActors" upperBound="-1"
+        eType="#//Actor" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ownedConnectors" upperBound="-1"
+        eType="#//Connector" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NamedElement" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Actor" eSuperTypes="#//NamedElement">
+    <eOperations name="start"/>
+    <eOperations name="stop"/>
+    <eOperations name="read"/>
+    <eOperations name="write"/>
+    <eOperations name="transform"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ownedInputPorts" upperBound="-1"
+        eType="#//InputPort" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ownedOutputPorts" upperBound="-1"
+        eType="#//OutputPort" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="period" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Port" abstract="true" eSuperTypes="#//NamedElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="InputPort" eSuperTypes="#//Port">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="connector" eType="#//Connector"
+        eOpposite="#//Connector/inputport"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OutputPort" eSuperTypes="#//Port">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="connector" eType="#//Connector"
+        eOpposite="#//Connector/outputport"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Connector" eSuperTypes="#//NamedElement">
+    <eOperations name="transfer"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="inputport" lowerBound="1"
+        eType="#//InputPort" eOpposite="#//InputPort/connector"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="outputport" lowerBound="1"
+        eType="#//OutputPort" eOpposite="#//OutputPort/connector"/>
+  </eClassifiers>
+</ecore:EPackage>

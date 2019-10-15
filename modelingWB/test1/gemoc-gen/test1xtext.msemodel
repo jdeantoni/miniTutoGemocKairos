@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ASCII"?>
+<trace:MSEModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:concurrent_mse="http://www.gemoc.org/gemoc_execution_engine_concurrent_mse" xmlns:trace="http://www.gemoc.org/generic_trace">
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_zaza_0_time">
+    <feedbackModelSpecificEvent href="test1xtext.feedback#//@events.0"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_a1_1_startIt">
+    <feedbackModelSpecificEvent href="test1xtext.feedback#//@events.1"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_a2_2_startIt">
+    <feedbackModelSpecificEvent href="test1xtext.feedback#//@events.2"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_a1_1_stopIt">
+    <feedbackModelSpecificEvent href="test1xtext.feedback#//@events.3"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_a2_2_stopIt">
+    <feedbackModelSpecificEvent href="test1xtext.feedback#//@events.4"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_a1_1_transformIt">
+    <feedbackModelSpecificEvent href="test1xtext.feedback#//@events.5"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_a2_2_transformIt">
+    <feedbackModelSpecificEvent href="test1xtext.feedback#//@events.6"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_a1_1_readIt">
+    <feedbackModelSpecificEvent href="test1xtext.feedback#//@events.7"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_a2_2_readIt">
+    <feedbackModelSpecificEvent href="test1xtext.feedback#//@events.8"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_a1_1_writeIt">
+    <feedbackModelSpecificEvent href="test1xtext.feedback#//@events.9"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_a2_2_writeIt">
+    <feedbackModelSpecificEvent href="test1xtext.feedback#//@events.10"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_c1_3_transferIt">
+    <feedbackModelSpecificEvent href="test1xtext.feedback#//@events.11"/>
+  </ownedMSEs>
+</trace:MSEModel>

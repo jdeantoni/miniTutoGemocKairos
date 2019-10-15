@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated kairosTuto -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.kairos.tuto.model.kairosTuto.presentation.KairosTutoModelWizardID"
+            name="%_UI_KairosTutoModelWizard_label"
+            class="fr.inria.kairos.tuto.model.kairosTuto.presentation.KairosTutoModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/KairosTutoModelFile.gif">
+         <description>%_UI_KairosTutoModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated kairosTuto -->
+      <editor
+            id="fr.inria.kairos.tuto.model.kairosTuto.presentation.KairosTutoEditorID"
+            name="%_UI_KairosTutoEditor_label"
+            icon="icons/full/obj16/KairosTutoModelFile.gif"
+            extensions="kairostuto"
+            class="fr.inria.kairos.tuto.model.kairosTuto.presentation.KairosTutoEditor"
+            contributorClass="fr.inria.kairos.tuto.model.kairosTuto.presentation.KairosTutoActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

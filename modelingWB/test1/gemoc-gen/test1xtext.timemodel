@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fr.inria.aoste.timemodel.ccslmodel:ClockConstraintSystem xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fr.inria.aoste.timemodel="http://fr.inria.aoste.timemodel" xmlns:fr.inria.aoste.timemodel.basicTypes="http://fr.inria.aoste.timemodel.basicTypes" xmlns:fr.inria.aoste.timemodel.ccslmodel="http://fr.inria.aoste.timemodel.ccslmodel" name="zaza_0" superBlock="//@subBlock.0">
+  <subBlock name="mainBlock">
+    <elements xsi:type="fr.inria.aoste.timemodel:Clock" name="zaza_0_time">
+      <type xsi:type="fr.inria.aoste.timemodel.basicTypes:DiscreteClockType" href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@predefinedTypes.1"/>
+      <tickingEvent name="evt_zaza_0_time">
+        <referencedObjectRefs href="../test1xtext.ks#/"/>
+        <referencedObjectRefs href="http://team.inria.fr/kairos/kairosTuto#//KairosSystem/incTime"/>
+      </tickingEvent>
+    </elements>
+    <elements xsi:type="fr.inria.aoste.timemodel:Clock" name="a1_1_startIt">
+      <type xsi:type="fr.inria.aoste.timemodel.basicTypes:DiscreteClockType" href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@predefinedTypes.1"/>
+      <tickingEvent name="evt_a1_1_startIt">
+        <referencedObjectRefs href="../test1xtext.ks#//@ownedActors.0"/>
+        <referencedObjectRefs href="http://team.inria.fr/kairos/kairosTuto#//Actor/start"/>
+      </tickingEvent>
+    </elements>
+    <elements xsi:type="fr.inria.aoste.timemodel:Clock" name="a2_2_startIt">
+      <type xsi:type="fr.inria.aoste.timemodel.basicTypes:DiscreteClockType" href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@predefinedTypes.1"/>
+      <tickingEvent name="evt_a2_2_startIt">
+        <referencedObjectRefs href="../test1xtext.ks#//@ownedActors.1"/>
+        <referencedObjectRefs href="http://team.inria.fr/kairos/kairosTuto#//Actor/start"/>
+      </tickingEvent>
+    </elements>
+    <elements xsi:type="fr.inria.aoste.timemodel:Clock" name="a1_1_stopIt">
+      <type xsi:type="fr.inria.aoste.timemodel.basicTypes:DiscreteClockType" href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@predefinedTypes.1"/>
+      <tickingEvent name="evt_a1_1_stopIt">
+        <referencedObjectRefs href="../test1xtext.ks#//@ownedActors.0"/>
+        <referencedObjectRefs href="http://team.inria.fr/kairos/kairosTuto#//Actor/stop"/>
+      </tickingEvent>
+    </elements>
+    <elements xsi:type="fr.inria.aoste.timemodel:Clock" name="a2_2_stopIt">
+      <type xsi:type="fr.inria.aoste.timemodel.basicTypes:DiscreteClockType" href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@predefinedTypes.1"/>
+      <tickingEvent name="evt_a2_2_stopIt">
+        <referencedObjectRefs href="../test1xtext.ks#//@ownedActors.1"/>
+        <referencedObjectRefs href="http://team.inria.fr/kairos/kairosTuto#//Actor/stop"/>
+      </tickingEvent>
+    </elements>
+    <elements xsi:type="fr.inria.aoste.timemodel:Clock" name="a1_1_transformIt">
+      <type xsi:type="fr.inria.aoste.timemodel.basicTypes:DiscreteClockType" href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@predefinedTypes.1"/>
+      <tickingEvent name="evt_a1_1_transformIt">
+        <referencedObjectRefs href="../test1xtext.ks#//@ownedActors.0"/>
+        <referencedObjectRefs href="http://team.inria.fr/kairos/kairosTuto#//Actor/transform"/>
+      </tickingEvent>
+    </elements>
+    <elements xsi:type="fr.inria.aoste.timemodel:Clock" name="a2_2_transformIt">
+      <type xsi:type="fr.inria.aoste.timemodel.basicTypes:DiscreteClockType" href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@predefinedTypes.1"/>
+      <tickingEvent name="evt_a2_2_transformIt">
+        <referencedObjectRefs href="../test1xtext.ks#//@ownedActors.1"/>
+        <referencedObjectRefs href="http://team.inria.fr/kairos/kairosTuto#//Actor/transform"/>
+      </tickingEvent>
+    </elements>
+    <elements xsi:type="fr.inria.aoste.timemodel:Clock" name="a1_1_readIt">
+      <type xsi:type="fr.inria.aoste.timemodel.basicTypes:DiscreteClockType" href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@predefinedTypes.1"/>
+      <tickingEvent name="evt_a1_1_readIt">
+        <referencedObjectRefs href="../test1xtext.ks#//@ownedActors.0"/>
+        <referencedObjectRefs href="http://team.inria.fr/kairos/kairosTuto#//Actor/read"/>
+      </tickingEvent>
+    </elements>
+    <elements xsi:type="fr.inria.aoste.timemodel:Clock" name="a2_2_readIt">
+      <type xsi:type="fr.inria.aoste.timemodel.basicTypes:DiscreteClockType" href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@predefinedTypes.1"/>
+      <tickingEvent name="evt_a2_2_readIt">
+        <referencedObjectRefs href="../test1xtext.ks#//@ownedActors.1"/>
+        <referencedObjectRefs href="http://team.inria.fr/kairos/kairosTuto#//Actor/read"/>
+      </tickingEvent>
+    </elements>
+    <elements xsi:type="fr.inria.aoste.timemodel:Clock" name="a1_1_writeIt">
+      <type xsi:type="fr.inria.aoste.timemodel.basicTypes:DiscreteClockType" href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@predefinedTypes.1"/>
+      <tickingEvent name="evt_a1_1_writeIt">
+        <referencedObjectRefs href="../test1xtext.ks#//@ownedActors.0"/>
+        <referencedObjectRefs href="http://team.inria.fr/kairos/kairosTuto#//Actor/write"/>
+      </tickingEvent>
+    </elements>
+    <elements xsi:type="fr.inria.aoste.timemodel:Clock" name="a2_2_writeIt">
+      <type xsi:type="fr.inria.aoste.timemodel.basicTypes:DiscreteClockType" href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@predefinedTypes.1"/>
+      <tickingEvent name="evt_a2_2_writeIt">
+        <referencedObjectRefs href="../test1xtext.ks#//@ownedActors.1"/>
+        <referencedObjectRefs href="http://team.inria.fr/kairos/kairosTuto#//Actor/write"/>
+      </tickingEvent>
+    </elements>
+    <elements xsi:type="fr.inria.aoste.timemodel:Clock" name="c1_3_transferIt">
+      <type xsi:type="fr.inria.aoste.timemodel.basicTypes:DiscreteClockType" href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@predefinedTypes.1"/>
+      <tickingEvent name="evt_c1_3_transferIt">
+        <referencedObjectRefs href="../test1xtext.ks#//@ownedConnectors.0"/>
+        <referencedObjectRefs href="http://team.inria.fr/kairos/kairosTuto#//Connector/transfer"/>
+      </tickingEvent>
+    </elements>
+    <elements xsi:type="fr.inria.aoste.timemodel.basicTypes:IntegerElement" name="c1_3c1_size()" value="2">
+      <type xsi:type="fr.inria.aoste.timemodel.basicTypes:Integer" href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@predefinedTypes.2"/>
+    </elements>
+    <relations name="c1_3Coincides_connectorBehavior">
+      <type href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.1"/>
+      <bindings bindable="//@subBlock.0/@expressions.0">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.1/@leftEntity"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.8">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib#//@relationLibraries.0/@relationDeclarations.1/@rightEntity"/>
+      </bindings>
+    </relations>
+    <relations name="c1_3Alternates_connectorBehavior2">
+      <type href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@relationLibraries.0/@relationDeclarations.0"/>
+      <bindings bindable="//@subBlock.0/@elements.9">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@relationLibraries.0/@relationDeclarations.0/@parameters.0"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.11">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@relationLibraries.0/@relationDeclarations.0/@parameters.1"/>
+      </bindings>
+    </relations>
+    <relations name="c1_3Alternates_connectorBehavior3">
+      <type href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@relationLibraries.0/@relationDeclarations.0"/>
+      <bindings bindable="//@subBlock.0/@elements.11">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@relationLibraries.0/@relationDeclarations.0/@parameters.0"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.8">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@relationLibraries.0/@relationDeclarations.0/@parameters.1"/>
+      </bindings>
+    </relations>
+    <relations name="a1_1KairosTask_TaskBehavior">
+      <type href="../../../plugin/fr.inria.kairos.tuto.moccml/mocc/KairosSystemLib.moccml#//@relationLibraries.0/@relationDeclarations.0"/>
+      <bindings bindable="//@subBlock.0/@elements.1">
+        <abstract href="../../../plugin/fr.inria.kairos.tuto.moccml/mocc/KairosSystemLib.moccml#//@relationLibraries.0/@relationDeclarations.0/@parameters.0"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.3">
+        <abstract href="../../../plugin/fr.inria.kairos.tuto.moccml/mocc/KairosSystemLib.moccml#//@relationLibraries.0/@relationDeclarations.0/@parameters.1"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.7">
+        <abstract href="../../../plugin/fr.inria.kairos.tuto.moccml/mocc/KairosSystemLib.moccml#//@relationLibraries.0/@relationDeclarations.0/@parameters.2"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.9">
+        <abstract href="../../../plugin/fr.inria.kairos.tuto.moccml/mocc/KairosSystemLib.moccml#//@relationLibraries.0/@relationDeclarations.0/@parameters.3"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.5">
+        <abstract href="../../../plugin/fr.inria.kairos.tuto.moccml/mocc/KairosSystemLib.moccml#//@relationLibraries.0/@relationDeclarations.0/@parameters.4"/>
+      </bindings>
+    </relations>
+    <relations name="a2_2KairosTask_TaskBehavior">
+      <type href="../../../plugin/fr.inria.kairos.tuto.moccml/mocc/KairosSystemLib.moccml#//@relationLibraries.0/@relationDeclarations.0"/>
+      <bindings bindable="//@subBlock.0/@elements.2">
+        <abstract href="../../../plugin/fr.inria.kairos.tuto.moccml/mocc/KairosSystemLib.moccml#//@relationLibraries.0/@relationDeclarations.0/@parameters.0"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.4">
+        <abstract href="../../../plugin/fr.inria.kairos.tuto.moccml/mocc/KairosSystemLib.moccml#//@relationLibraries.0/@relationDeclarations.0/@parameters.1"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.8">
+        <abstract href="../../../plugin/fr.inria.kairos.tuto.moccml/mocc/KairosSystemLib.moccml#//@relationLibraries.0/@relationDeclarations.0/@parameters.2"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.10">
+        <abstract href="../../../plugin/fr.inria.kairos.tuto.moccml/mocc/KairosSystemLib.moccml#//@relationLibraries.0/@relationDeclarations.0/@parameters.3"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.6">
+        <abstract href="../../../plugin/fr.inria.kairos.tuto.moccml/mocc/KairosSystemLib.moccml#//@relationLibraries.0/@relationDeclarations.0/@parameters.4"/>
+      </bindings>
+    </relations>
+    <expressions name="c1_3_DelayFor_writeDelayed">
+      <type href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@expressionLibraries.0/@expressionDeclarations.3"/>
+      <bindings bindable="//@subBlock.0/@elements.9">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@expressionLibraries.0/@expressionDeclarations.3/@parameters.0"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.0">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@expressionLibraries.0/@expressionDeclarations.3/@parameters.1"/>
+      </bindings>
+      <bindings bindable="//@subBlock.0/@elements.12">
+        <abstract href="../../../plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib#//@expressionLibraries.0/@expressionDeclarations.3/@parameters.2"/>
+      </bindings>
+    </expressions>
+  </subBlock>
+  <subBlock name="emptyBlock"/>
+  <imports importURI="platform:/plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib" alias="kernel"/>
+  <imports importURI="platform:/plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib" alias="CCSL"/>
+  <imports importURI="platform:/plugin/fr.inria.kairos.tuto.moccml/mocc/KairosSystemLib.moccml" alias="KairosSystemLib"/>
+  <imports importURI="platform:/resource/test1/test1xtext.ks" alias="KairosSystem"/>
+  <imports importURI="platform:/resource/test1/test1xtext.ks" alias="KairosSystem"/>
+</fr.inria.aoste.timemodel.ccslmodel:ClockConstraintSystem>
